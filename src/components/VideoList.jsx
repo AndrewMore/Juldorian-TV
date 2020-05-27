@@ -1,8 +1,9 @@
 var VideoList = (props) => {
-  var video = getVideo(props.videos);
-  return (
+    return (
     <div className="video-list">
-      <div><h5><em>Video</em>{props.videos.map(video =>
+        <div><h5><em>Video</em>
+            {props.videos.map(
+                (video) => 
         <VideoListEntry video={video} />
       )}</h5></div>
     </div>
