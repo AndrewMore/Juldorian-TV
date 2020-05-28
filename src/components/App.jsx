@@ -2,6 +2,8 @@ import VideoPlayer from './VideoPlayer.js';
 import VideoList from './VideoList.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 import Search from './Search.js';
+import searchYouTube from '../lib/searchYouTube.js';
+import YOUTUBE_API_KEY from '../config/youtube.js';
 
 class App extends React.Component {
   constructor (props) {
@@ -23,7 +25,9 @@ class App extends React.Component {
     this.setState({
       query: event.target.value
     }, () => {
-      console.log(this.state.query);
+      let options = {query: this.state.query, max: 5, key: YOUTUBE_API_KEY};
+      // console.log(this.state.query);
+      searchYouTube(options, (data) => { this.setState({videoList: data}); });
     });
   }
 
