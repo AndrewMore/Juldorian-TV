@@ -1,12 +1,37 @@
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 
 body {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background-color: #00e865;
+  background-image: url("https://www.transparenttextures.com/patterns/robots.png")
+}
+
+header {
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+h1.title {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+.myBoys {
+  max-height: 100%;
 }
 
 .navbar {
   background: #fff;
+  border-radius: 20px;
+  margin: auto;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .navbar img {
@@ -15,7 +40,7 @@ body {
 }
 
 .search-bar {
-  border-radius: 1px;
+  border-radius: 20px;
   background: #fff;
 }
 
@@ -41,9 +66,14 @@ body {
   margin-left: 20px;
 }
 
+.embed-responsive-item {
+  border-radius: 20px;
+}
+
 .video-player-details {
   background: #fff;
-  padding: 8px;
+  border-radius: 20px;
+  padding: 20px;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
   margin-top: 10px;
@@ -51,6 +81,7 @@ body {
 
 .video-list {
   background: #fff;
+  border-radius: 20px;
   padding: 8px;
   border: 0;
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
@@ -82,6 +113,7 @@ body {
 
 .media-body {
   padding-left: 20px;
+  overflow: auto;
 }
 
 h5 {
