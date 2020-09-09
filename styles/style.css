@@ -4,7 +4,8 @@
 body {
   /* background: #f1f1f1; */
   background-color: #00e865;
-  background-image: url("https://www.transparenttextures.com/patterns/robots.png")
+  background-image: url("https://www.transparenttextures.com/patterns/robots.png");
+  padding: 20px;
 }
 
 header {
