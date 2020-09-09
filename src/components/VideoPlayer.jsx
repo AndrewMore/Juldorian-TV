@@ -1,4 +1,7 @@
-var VideoPlayer = (props) => (
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const VideoPlayer = (props) => (
   <div className="video-player">
     <div className="embed-responsive embed-responsive-16by9">
       <iframe

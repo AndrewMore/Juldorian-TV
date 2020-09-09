@@ -1,8 +1,8 @@
-// import React from 'react';
-import VideoPlayer from './VideoPlayer.js';
-import VideoList from './VideoList.js';
+import React from 'react';
+import VideoPlayer from './VideoPlayer.jsx';
+import VideoList from './VideoList.jsx';
 import exampleVideoData from '../data/exampleVideoData.js';
-import Search from './Search.js';
+import Search from './Search.jsx';
 import searchYouTube from '../lib/searchYouTube.js';
 import YOUTUBE_API_KEY from '../config/youtube.js';
 
@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <img className="myBoys" src="src/data/Julian.png" alt="Julian" />
+          <img className="myBoys" src="../src/data/Julian.png" alt="Julian" />
           <div className="flex-column">
             <h1 className="title">Julian & Dorian TV</h1>
             <nav className="navbar">
@@ -51,7 +51,7 @@ class App extends React.Component {
               </div>
             </nav>
           </div>
-          <img className="myBoys" src="src/data/Dorian.png" alt="Dorian" />
+          <img className="myBoys" src="../src/data/Dorian.png" alt="Dorian" />
         </header>
         <div className="row">
           <div className="col-md-7">

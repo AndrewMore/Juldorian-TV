@@ -1,4 +1,7 @@
-var VideoListEntry = (props) => (
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const VideoListEntry = (props) => (
   <div className="video-list-entry media">
     <div className="media-left media-middle">
       <img

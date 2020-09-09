@@ -1,5 +1,8 @@
-import VideoListEntry from './VideoListEntry.js';
-var VideoList = (props) => {
+import React from 'react';
+import PropTypes from 'prop-types';
+import VideoListEntry from './VideoListEntry.jsx';
+
+const VideoList = (props) => {
   return (
     <div className="video-list">
       {props.videos.map((video, index) => (
