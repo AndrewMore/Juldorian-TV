@@ -2,7 +2,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![React](https://img.shields.io/badge/react-js-blue)
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/AndrewMore/Juldorian-TV)
 [![GitHub Issues](https://img.shields.io/github/issues/AndrewMore/Juldorian-TV)](https://github.com/AndrewMore/Juldorian-TV/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
