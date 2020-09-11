@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Search = (props) => (
+var Search = (props) => (
   <div className="search-bar form-inline">
     <input className="form-control" type="text" onChange={props.changeVideoList} />
     <button className="btn hidden-sm-down">

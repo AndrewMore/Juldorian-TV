@@ -5,3 +5,4 @@
 **/*.min.js
 client/data/*
 compiled/
+dist/bundle.js
