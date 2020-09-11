@@ -5,8 +5,7 @@
 node_modules/
 
 ## Compiled files ##
-compiled/
+dist/bundle.js
 
 ## API keys ##
 src/config/youtube.js
-compiled/config/youtube.js
