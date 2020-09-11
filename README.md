@@ -6,7 +6,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/AndrewMore/Juldorian-TV)
 [![GitHub Issues](https://img.shields.io/github/issues/AndrewMore/Juldorian-TV)](https://github.com/AndrewMore/Juldorian-TV/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
-[![GPL License](https://img.shields.io/github/license/AndrewMore/Juldorian-TV)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![GPL License](https://img.shields.io/badge/license-GPL--3.0-orange)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 
 A custom Youtube viewer I made for my kids using React and the Youtube API. Future feature releases will be oriented towards resolving conflict issues amongst the kids related to turn sharing when watching Youtube.
