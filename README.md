@@ -24,7 +24,7 @@ A custom Youtube viewer I made for my kids using React and the Youtube API. Futu
 > You can search, and the results will populate in the right-hand sidebar. Any result can then be selected, and will be reflected in the main video player.
 
 
-### Set-Up
+## Set-Up
 
 From within the root directory:
 
@@ -55,7 +55,7 @@ Developer / Author: [Andrew More](https://github.com/AndrewMore/)
 
 This work by <a href="https://github.com/AndrewMore/">Andrew More</a> is licensed under a <a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3.0</a>.
 
-## Contributing
+### Contributing
 
 All contributions are welcome!
 Please take a moment to review guidelines [Feature Requests](.github/feature_request.md) | [Issues](.github/bug_report.md)
