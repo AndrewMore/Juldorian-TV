@@ -13,7 +13,7 @@ A custom Youtube viewer I made for my kids using React and the Youtube API. Futu
 ## Table of Contents
 
 1. [Usage](#Usage)
-2. [Installing Dependencies](#Installing-Dependencies)
+2. [Set-Up](#Set-Up)
 3. [Pending Features](#Pending-Features)
 4. [Development By](#Development-By)
 5. [License](#License)
@@ -24,13 +24,17 @@ A custom Youtube viewer I made for my kids using React and the Youtube API. Futu
 > You can search, and the results will populate in the right-hand sidebar. Any result can then be selected, and will be reflected in the main video player.
 
 
-### Installing Dependencies
+### Set-Up
 
 From within the root directory:
 
 ```sh
 git clone
 yarn install
+cp src/config/youtube.example.js src/config/youtube.js
+```
+Replace 'YOUR_API_KEY_HERE' with your Youtube API key, and save.
+```sh
 yarn start
 yarn run build
 ```
