@@ -1,12 +1,11 @@
 # Juldorian TV
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![React](https://img.shields.io/badge/react-js-blue)
+![React](https://img.shields.io/badge/react-JS-blue)
 ![Repo Size](https://img.shields.io/github/repo-size/AndrewMore/Juldorian-TV)
 [![GitHub Issues](https://img.shields.io/github/issues/AndrewMore/Juldorian-TV)](https://github.com/AndrewMore/Juldorian-TV/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![GPL License](https://img.shields.io/badge/license-GPL--3.0-orange)](https://www.gnu.org/licenses/gpl-3.0.html)
-
 
 A custom Youtube viewer I made for my kids using React and the Youtube API. Future feature releases will be oriented towards resolving conflict issues amongst the kids related to turn sharing when watching Youtube.
 
@@ -35,8 +34,8 @@ cp src/config/youtube.example.js src/config/youtube.js
 ```
 Replace 'YOUR_API_KEY_HERE' with your Youtube API key, and save.
 ```sh
-yarn start
 yarn run build
+yarn start
 ```
 
 #### Pending Features
