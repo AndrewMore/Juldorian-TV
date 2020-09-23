@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const VideoPlayer = (props) => (
+const VideoPlayer = ({ video: { id, snippet } }) => (
   <div className="video-player">
     <div className="embed-responsive embed-responsive-16by9">
       <iframe
+        title="Video Player"
         className="embed-responsive-item"
-        src={'https://www.youtube.com/embed/' + props.video.id.videoId}
-      ></iframe>
+        src={`https://www.youtube.com/embed/${id.videoId}`}
+      />
     </div>
     <div className="video-player-details">
-      <h3>{props.video.snippet.title}</h3>
-      <div>{props.video.snippet.description}</div>
+      <h3>{snippet.title}</h3>
+      <div>{snippet.description}</div>
     </div>
   </div>
 );

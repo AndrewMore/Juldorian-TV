@@ -27,18 +27,20 @@ class App extends React.Component {
   }
 
   changeVideoList(event) {
+    const { query } = this.state;
     this.setState({
       query: event.target.value,
     }, () => {
-      const options = { query: this.state.query, max: 5, key: YOUTUBE_API_KEY };
+      const options = { query, max: 5, key: YOUTUBE_API_KEY };
       searchYouTube(options, (data) => {
         this.setState({ videoList: data });
-        console.log(data);
+        // console.log(data);
       });
     });
   }
 
   render() {
+    const { currentVideo, videoList } = this.state;
     return (
       <div>
         <header>
@@ -55,20 +57,15 @@ class App extends React.Component {
         </header>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayer video={this.state.currentVideo} />
+            <VideoPlayer video={currentVideo} />
           </div>
           <div className="col-md-5">
-            <VideoList videos={this.state.videoList} changeVid={this.onListEntryClick} />
+            <VideoList videos={videoList} changeVid={this.onListEntryClick} />
           </div>
         </div>
       </div>
     );
   }
-
-  // componentDidMount() {
-  //   let options = {query: 'react js', max: 6, key: YOUTUBE_API_KEY};
-  //   searchYouTube(options, (data) => { this.setState({videoList: data, currentVideo: data[0]}); });
-  // }
 }
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined

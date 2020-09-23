@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const VideoListEntry = (props) => (
+const VideoListEntry = ({ video, changeVid }) => (
   <div className="video-list-entry media">
     <div className="media-left media-middle">
       <img
         className="media-object"
-        src={props.video.snippet.thumbnails.default.url}
+        src={video.snippet.thumbnails.default.url}
         alt=""
       />
     </div>
     <div className="media-body">
-      <div className="video-list-entry-title" onClick={()=>{ props.changeVid(props.video); }}>{props.video.snippet.title}</div>
+      <div className="video-list-entry-title" onClick={() => { changeVid(video); }}>{video.snippet.title}</div>
       <div className="video-list-entry-detail">
-        {props.video.snippet.description}
+        {video.snippet.description}
       </div>
     </div>
   </div>
@@ -23,6 +23,7 @@ const VideoListEntry = (props) => (
 // Warnings will be shown in the console when the defined rules are violated
 VideoListEntry.propTypes = {
   video: PropTypes.object.isRequired,
+  changeVid: PropTypes.func.isRequired,
 };
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope

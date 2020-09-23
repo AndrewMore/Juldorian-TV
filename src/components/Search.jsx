@@ -1,14 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-var Search = (props) => (
+const Search = ({ changeVideoList }) => (
   <div className="search-bar form-inline">
-    <input className="form-control" type="text" onChange={props.changeVideoList} />
-    <button className="btn hidden-sm-down">
-      <span className="glyphicon glyphicon-search"></span>
+    <input className="form-control" type="text" onChange={changeVideoList} />
+    <button type="button" className="btn hidden-sm-down">
+      <span className="glyphicon glyphicon-search" />
     </button>
   </div>
 );
 
-// In the ES6 spec, files are "modules" and do not share a top-level scope
-// `var` declarations will only exist globally where explicitly defined
+Search.propTypes = {
+  changeVideoList: PropTypes.func.isRequired,
+};
+
 export default Search;
